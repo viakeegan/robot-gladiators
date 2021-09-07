@@ -12,7 +12,7 @@ var enemyAttack = 100.01;
 // create fight function
 var fight = function() {
     // alert player that they are starting the round
-    window.alert("Welcome to Robot Gladiators!");
+    window.alert("You have entered the Battlefield!" );
 
     //Subtract the value of 'playerAttack' from the value of 'enemyHealth' and use that result to update the  value in the 'enemyHealth' variable
     enemyHealth = enemyHealth - playerAttack;
