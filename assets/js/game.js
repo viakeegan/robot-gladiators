@@ -8,7 +8,7 @@ var playerMoney = 10;
 console.log(playerName, playerAttack, playerHealth);
 
 var enemyName = "KEESPARC";
-var enemyHealth = 10; 
+var enemyHealth = 100; 
 var enemyAttack = 100.01; 
 
 // create fight function
@@ -29,7 +29,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
   
     // check enemy's health
     if (enemyHealth <= 0) {
-      window.alert(enemyName + " has died!");
+      window.alert(enemyName + " has been decemated!");
     } else {
       window.alert(enemyName + " still has " + enemyHealth + " health left.");
     }
@@ -42,7 +42,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
   
     // check player's health
     if (playerHealth <= 0) {
-      window.alert(playerName + " has died!");
+      window.alert(playerName + " has been decemated!");
     } else {
       window.alert(playerName + " still has " + playerHealth + " health left.");
     }
