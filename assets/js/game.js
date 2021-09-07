@@ -1,17 +1,18 @@
-// var playerName = '';
 var playerName = window.prompt("Identify yourself Robot.");
 var playerHealth = 100;
-var playerAttack = 31;
+var playerAttack = 10;
 var playerMoney = 10;
 
-// You can also log multiple values at once like this
-console.log(playerName, playerAttack, playerHealth);
+var enemyNames = ['Roberto', 'Amy Android', 'Robo Trumble'];
+var enemyHealth = 50; 
+var enemyAttack = 12; 
 
-var enemyName = "KEESPARC";
-var enemyHealth = 100; 
-var enemyAttack = 100.01; 
+console.log(enemyNames);
+console.log(enemyNames.length);
+console.log(enemyNames[0]);
+console.log(enemyNames[3]);
 
-// create fight function
+// create fight function (now with parameter for enemy's name)
 var fight = function() {
     // alert player that they are starting the round
     window.alert("You have entered the Battlefield!" );
@@ -20,7 +21,7 @@ var fight = function() {
     var promptFight = window.prompt("KEESPARC CHALLENGES YOU! Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
 
     // if player choses to fight, then fight
-if (promptFight === "fight" || promptFight === "FIGHT") {
+    if (promptFight === "fight" || promptFight === "FIGHT") {
     // remove enemy's health by subtracting the amount set in the playerAttack variable
     enemyHealth = enemyHealth - playerAttack;
     console.log(
@@ -29,15 +30,15 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
   
     // check enemy's health
     if (enemyHealth <= 0) {
-      window.alert(enemyName + " has been decemated!");
+      window.alert(enemyNames + " has been decemated!");
     } else {
-      window.alert(enemyName + " still has " + enemyHealth + " health left.");
+      window.alert(enemyNames + " still has " + enemyHealth + " health left.");
     }
   
     // remove player's health by subtracting the amount set in the enemyAttack variable
     playerHealth = playerHealth - enemyAttack;
     console.log(
-      enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
+      enemyNames + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
     );
   
     // check player's health
@@ -69,7 +70,9 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
 };
 
 // run fight function to start game
-fight();
+for(var i = 0; i <enemyNames.length; i++) {
+  fight(enemyNames[i]);
+}
 
   
 
