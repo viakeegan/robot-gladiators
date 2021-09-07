@@ -6,7 +6,7 @@ var playerAttack = 10;
 console.log(playerName, playerAttack, playerHealth);
 
 var enemyName = "keesparc";
-var enemyHealth = 50; 
+var enemyHealth = 79; 
 var enemyAttack = 100.01; 
 
 // create fight function
