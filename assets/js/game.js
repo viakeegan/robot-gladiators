@@ -5,9 +5,9 @@ var playerAttack = 10;
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
 
-var enemyName = "Roberto";
+var enemyName = "keesparc";
 var enemyHealth = 50; 
-var enemyAttack = 12; 
+var enemyAttack = 100.01; 
 
 // create fight function
 var fight = function() {
