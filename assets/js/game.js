@@ -144,14 +144,17 @@ var shop = function() {
   switch (shopOptionPrompt) {
     case 'REFILL':
     case 'refill':
+    case 'Refill':
       playerInfo.refillHealth();
       break;
     case 'UPGRADE':
     case 'upgrade':
+    case 'Upgrade':
       playerInfo.upgradeAttack();
       break;
     case 'LEAVE':
     case 'leave':
+    case 'Leave':
       window.alert('Leaving the store.');
 
       // do nothing, so function will end
